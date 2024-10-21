@@ -1,0 +1,20 @@
+---
+import { ThemeShifter } from "./ThemeShifter";
+---
+
+<nav
+    class="container mx-auto max-w-3xl px-5 flex justify-between mb-8 sm:pt-4 items-center"
+>
+    <ul class="flex gap-8 md:gap-32">
+        <li class="list-none">
+            <a class="hover:bg-gray-900 hover:dark:bg-gray-200 hover:text-white hover:dark:text-black p-2 rounded" href="/">Resume</a>
+        </li>
+        <li class="list-none">
+            <a class="hover:bg-gray-900 hover:dark:bg-gray-200 hover:text-white hover:dark:text-black p-2 rounded" href="/portfolio">Portfolio</a>
+        </li>
+        <li class="list-none">
+            <a class="hover:bg-gray-900 hover:dark:bg-gray-200 hover:text-white hover:dark:text-black p-2 rounded" href="/blog">Blog</a>
+        </li>
+    </ul>
+    <ThemeShifter client:load/>
+</nav>

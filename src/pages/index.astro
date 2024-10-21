@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import WorkExperience from "../components/resume/WorkExperience.astro";
+import TechSkills from "../components/resume/TechSkills.astro";
+import Education from "../components/resume/Education.astro";
+import Languages from "../components/resume/Languages.astro";
+import Contact from "../components/resume/Contact.astro";
+import Awards from "../components/resume/Awards.astro";
+import Navbar from "../components/shared/Navbar.astro";
+
+import "@fontsource-variable/inter";
+import "@fontsource/roboto";
+---
+
+<Layout title="Resume">
+	<Navbar />
+	<main class="container mx-auto max-w-3xl px-5">
+		<section>
+			<h1 class="text-3xl font-extrabold sm:text-4xl bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-[#6633ee] w-fit">
+				Fernando Vásquez
+			</h1>
+			<p class="text-lg">Web developer</p>
+			<Contact/>
+		</section>
+		<hr class="mt-2" />
+		<TechSkills />
+		<WorkExperience />
+		<Awards />
+		<Education />
+		<Languages />
+	</main>
+</Layout>

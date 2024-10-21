@@ -1,0 +1,37 @@
+---
+import Navbar from "../../components/shared/Navbar.astro"
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Blog">
+    <Navbar />
+    <main class="container mx-auto max-w-3xl px-5">
+        <section>
+            <article class="mb-8">
+                <a
+                    class="sm:flex items-center gap-1 hover:underline"
+                    href="/blog/threejs"
+                >
+                    <h3 class="text-xl">Crea tu primer escena 3D con ThreeJS</h3>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                        ></path>
+                    </svg>
+                </a>
+                <p class="dark:text-gray-400 text-gray-600">
+                    Descubre cómo dar vida a tu primera escena 3D con ThreeJS. Aprende a crear figuras geométricas, añadir iluminación ambiental y puntual, y aplicar texturas para darle un toque único. Un tutorial paso a paso para sumergirte en el mundo del 3D en la web.
+                </p>
+            </article>
+        </section>
+    </main>
+</Layout>
