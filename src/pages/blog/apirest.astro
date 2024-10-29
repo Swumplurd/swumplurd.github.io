@@ -1,0 +1,16 @@
+---
+import PostLayout from "../../layouts/PostLayout.astro";
+import MarkdownApiRest from "../../components/blog/api-rest.md";
+import Navbar from "../../components/shared/Navbar.astro";
+
+
+---
+
+<PostLayout title="Primeros pasos en ThreeJS">
+    <Navbar/>
+    <main class="container mx-auto max-w-3xl px-5">
+        <section>
+            <MarkdownApiRest/>
+        </section>
+    </main>
+</PostLayout>
