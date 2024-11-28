@@ -10,6 +10,8 @@
 - Añadir iluminación ambiental y puntual.
 - Cargar y aplicar texturas a tus objetos.
 
+<iframe class="aspect-video w-full my-3 rounded mx-auto" src="https://swumplurd.github.io/earth-threejs/"></iframe>
+
 ### Requisitos previos
 
 Antes de comenzar, asegúrate de tener un conocimiento básico de JavaScript y haber instalado ThreeJS en tu proyecto. Si no lo has hecho, puedes agregarlo a tu proyecto mediante un gestor de paquetes como npm:
@@ -44,7 +46,7 @@ Vamos a crear una esfera utilizando la clase `SphereGeometry` de ThreeJS. Luego 
 
 ```javascript
 // Crear geometría de la esfera
-const geometry = new THREE.SphereGeometry(1, 32, 32);
+const geometry = new THREE.SphereGeometry(1, 64, 64);
 
 // Crear material de la esfera
 const material = new THREE.MeshBasicMaterial({ color: 0x0077ff });
@@ -96,8 +98,7 @@ function animate() {
   requestAnimationFrame(animate);
 
   // Rotar la esfera
-  sphere.rotation.x += 0.01;
-  sphere.rotation.y += 0.01;
+  sphere.rotation.y -= 0.01;
 
   // Renderizar la escena
   renderer.render(scene, camera);
@@ -110,3 +111,7 @@ animate();
 ### Conclusión
 
 ¡Felicidades! Has creado tu primera escena 3D con ThreeJS, añadiendo una esfera, luces y texturas. Esto es solo el principio: con ThreeJS puedes crear todo tipo de geometrías, cargar modelos 3D más complejos y explorar técnicas avanzadas de iluminación. ¡Sigue explorando y divirtiéndote en el mundo del 3D!
+
+### Código fuente
+
+[earth-threejs](https://github.com/Swumplurd/earth-threejs) 🔗
